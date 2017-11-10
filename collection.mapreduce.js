@@ -44,8 +44,8 @@
             jsMode: true // Whether to convert intermediate data into BSON format between the execution of the map and reduce functions
             //check performance/response time to see if it's worthy
 
-        }, function (err, testModel) {
-            console.log(testModel);
+        }, function (err, testModel, stats) {
+            console.log(testModel, stats);
             /* testModel.find().exec(function (err, testResults) {
                 console.log(testResults);
                 debugger;
