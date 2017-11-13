@@ -36,6 +36,7 @@
                         modifyDate: 1
                     },
 
+                    //Add new field
                     queriedBy: {
                         $concat: [
                             "Nadeem"/* ,
@@ -110,6 +111,7 @@
                     count: 1,
                     avg: 1,
 
+                    //Replace existing field's value.
                     //array: "Replaced won't work" ($ expected; when dealing with raw string, use $concat)
                     array: {
                         $concat: ["Length of Array: ", {
