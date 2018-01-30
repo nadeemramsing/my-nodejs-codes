@@ -17,6 +17,7 @@ model.StateHistory.aggregate()
                     article: 1,
                     date: 1
                 })
+                .allowDiskUse(true)
                 .then(function (statehistories) {
                     callback(null, articles, statehistories)
                 })
